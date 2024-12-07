@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      //appBar: AppBar(title: Text('LuxPool'),), 
+      //appBar: AppBar(title: Text('LuxPool'),), test
       body: Center(
         child: Image.asset('images/logo1.jpeg'),
       ),

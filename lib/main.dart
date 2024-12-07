@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Delay for 3 seconds before navigating to the next screen
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 2), () {
       // Navigate to the home screen after the splash screen
       Navigator.pushReplacement(
         context,

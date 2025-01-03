@@ -1,59 +1,31 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
+import 'screens/home/home_page.dart';
+import 'screens/splash/splash_screen.dart';
+import 'screens/auth/welcome_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'LUXPOOL',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-    );
-  }
-}
-
-class SplashScreen extends StatefulWidget {
-  @override
-  _SplashScreenState createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    // Delay for 3 seconds before navigating to the next screen
-    Timer(Duration(seconds: 2), () {
-      // Navigate to the home screen after the splash screen
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
-      );
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      //appBar: AppBar(title: Text('LuxPool'),), test
-      body: Center(
-        child: Image.asset('images/logo1.jpeg'),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Home Screen')),
-      body: Center(child: Text('Welcome to Home Screen!')),
-      
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SplashScreen(),
+        '/welcome': (context) => const WelcomeScreen(),
+        '/home': (context) => const HomePage(),
+      },
     );
   }
 }

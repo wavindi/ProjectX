@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "347964087109",
+    "project_id": "projectx-19c3f",
+    "storage_bucket": "projectx-19c3f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347964087109:android:5568b84e7b606ff52bbc2c",
+        "android_client_info": {
+          "package_name": "com.example.carpoolingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347964087109-gi6pb2tvpm2itm4pilp6vbd1f08i4a27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEVhBzFhZblsSlJGnOAPq0YcKW7pzRn2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347964087109-gi6pb2tvpm2itm4pilp6vbd1f08i4a27.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "347964087109-vr5cs2vrm13ddppc2jomjmkghhs0rhh4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.projectx"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

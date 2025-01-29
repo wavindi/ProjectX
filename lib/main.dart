@@ -5,6 +5,13 @@ import 'firebase_options.dart'; // Ensure this file is generated using FlutterFi
 import 'screens/home/home_page.dart';
 import 'screens/splash/splash_screen.dart';
 import 'screens/auth/welcome_screen.dart';
+import 'screens/language.dart';
+import 'screens/auth/verify1.dart';
+import 'screens/auth/verify2.dart';
+import 'screens/auth/verify3.dart';
+import 'screens/auth/verify4.dart';
+import 'screens/auth/verify5.dart';
+import 'screens/auth/verify6.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +36,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const SplashScreen(),
       routes: {
-        '/home': (context) => const WelcomeScreen(),
+        '/home': (context) => const HomePage(),
         '/welcome': (context) => const WelcomeScreen(),
       },
     );
